@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5%;
+}
+/* Dropdown Button */
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    margin-right: 30px;
+}
+
+
+.dropdown > button{
+    color: hsl(0, 0%, 41%);
+}
+
+nav > button{
+    color: hsl(0, 0%, 41%);
+}
+nav > button:hover{
+    color: black;
+}
+
+.dropdown > button:hover{
+    color: black;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 12px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    color: hsl(0, 0%, 41%);
+}
+
+
+.dropdown-content > a > img{
+    margin-right: 8px;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link{
+    margin-right: 400px;
+}
+
+button{
+    border: 1px solid;
+    border-radius: 12px;
+    padding: 10px 20px;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.button-full{
+    background: black;
+    color: white;
+    transition: all 0.4s;
+    border: 1px solid transparent;
+}
+
+.button-full:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid;
+    border-radius: 12px;
+}
+
+
+.button-empty{
+    background: transparent;
+    color: black;
+    border: none;
+}
+
+
+
+#first-section{
+    display: flex;
+    width: 100%;
+
+}
+
+
+
+.right > img{
+    width: 500px;
+    height: 600px;
+}
+
+.left{
+    width: 50%;
+}
+
+
+.container{
+    display: flex;
+    width: 100%;
+    padding: 150px 12%;
+    gap: 120px;
+}
+
+
+.left > h1{
+    font-size: 72px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.left > p {
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+
+.left > button{
+    font-size: 20px;
+}
+
+.pub{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 20px;
+}

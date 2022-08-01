@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="images/logo.svg" >
+        </div>
+        <div class="link">
+            <nav>
+                <div class="dropdown">
+                    <button onmouseover="myFunction()" class="dropbtn">Features
+                        <img src="images/icon-arrow-down.svg" onmouseover="this.src='images/icon-arrow-up.svg'"
+                             onmouseout="this.src='images/icon-arrow-down.svg'">
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#"> <img src="images/icon-todo.svg"> Todo List</a>
+                        <a href="#"> <img src="images/icon-calendar.svg">Calendar</a>
+                        <a href="#"> <img src="images/icon-reminders.svg">Reminders</a>
+                        <a href="#"><img src="images/icon-planning.svg">Planning</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button onmouseover="myFunctionCompany()" class="dropbtn">Company
+                        <img src="images/icon-arrow-down.svg"
+                             onmouseover="this.src='images/icon-arrow-up.svg'"
+                             onmouseout="this.src='images/icon-arrow-down.svg'"></button>
+                    <div id="company" class="dropdown-content">
+                        <a href="#">History</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+
+                <button class="dropbtn">Careers</button>
+                <button class="dropbtn">About</button>
+            </nav>
+        </div>
+        <div class="button-nav">
+            <button class="button-empty">Login</button>
+            <button>Register</button>
+        </div>
+    </div>
+
+
+<section id="first-section">
+    <div class="container">
+        <div class="left">
+                <h1>Make <br> remote work</h1>
+                <p>Get your team in sync, no matter your location. <br>
+                Streamline process, create team rituals, and <br>
+                watch productivity soar.</p>
+
+                <button class="button-full">
+                    Learn more
+                </button>
+            <div class="pub">
+                <img src="images/client-databiz.svg" >
+                <img src="images/client-audiophile.svg" >
+                <img src="images/client-meet.svg" >
+                <img src="images/client-maker.svg" >
+            </div>
+
+        </div>
+
+        <div class="right">
+            <img src="images/image-hero-desktop.png">
+        </div>
+
+
+    </div>
+</section>
+
+
+</body>
+</html>
